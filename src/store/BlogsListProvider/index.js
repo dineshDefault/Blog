@@ -36,7 +36,7 @@ const BlogsListProvider = ({ children }) => {
 
     setBlogsList(list);
     setHighlightedWords(words);
-  }, []);
+  }, []); //eslint-disable-line
 
   const addNewBlog = (blogData) => {
     const updatedBlogs = [...getBlogsList];
